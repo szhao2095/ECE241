@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 4/Part3
+vDFF_SR_HIGH
+Z1 !s110 1507686988
+!i10b 1
+!s100 WD8I?e?I[A>mQ5LH3ENR>3
+IH61jfQYeeMmHUYY]O9<if2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1507686661
+Z4 8part3.v
+Z5 Fpart3.v
+L0 119
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1507686988.000000
+Z8 !s107 part3.v|
+Z9 !s90 -reportprogress|300|part3.v|
+!i113 1
+n@d@f@f_@s@r_@h@i@g@h
+vmux2to1
+R1
+!i10b 1
+!s100 8oTN;JBiW5YD8k6Jn5]e62
+INlELR`;_]PaN3^aKX4@]53
+R2
+R0
+R3
+R4
+R5
+L0 137
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vpart3
+R1
+!i10b 1
+!s100 CISJ^M5WfToHiE[`nV`jo3
+IF=GQDWzeUYRkZm7=:>^IZ1
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vsubCircuit
+R1
+!i10b 1
+!s100 =H2Dim]:W;l2QBJmh_HSP0
+I8AihZioec:Q5g_z^VC4dU0
+R2
+R0
+R3
+R4
+R5
+L0 148
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+nsub@circuit

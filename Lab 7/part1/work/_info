@@ -1,0 +1,67 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 7/part1
+vhex_decoder
+Z1 !s110 1513618195
+!i10b 1
+!s100 K;aibL9knn9dBh:bnFS[<2
+I<>?n?zXXdkE<G[m<R_Jl[3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1509668784
+Z4 8part1.v
+Z5 Fpart1.v
+L0 49
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1513618195.000000
+Z8 !s107 ram32x4.v|part1.v|
+Z9 !s90 -reportprogress|300|part1.v|ram32x4.v|
+!i113 1
+vpart1
+R1
+!i10b 1
+!s100 m>J]QVio4RS]RzcjlA<HI0
+IjeGaDfKV@5GGU4Dih3aRU2
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vram32x4
+R1
+!i10b 1
+!s100 ;^BLTO6lghzZ?IMklD^:U3
+IJTXfD@>e8E`HiI``iYE0`3
+R2
+R0
+w1509668593
+8ram32x4.v
+Fram32x4.v
+L0 40
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1

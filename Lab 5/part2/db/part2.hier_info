@@ -1,0 +1,218 @@
+|part2
+KEY[0] => KEY[0].IN1
+KEY[1] => counter.OUTPUTSELECT
+KEY[1] => counter.OUTPUTSELECT
+KEY[1] => counter.OUTPUTSELECT
+KEY[1] => counter.OUTPUTSELECT
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => counter.DATAB
+SW[3] => counter.DATAB
+SW[4] => counter.DATAB
+SW[5] => counter.DATAB
+HEX0[0] <= hexdecoder:h0.HEX
+HEX0[1] <= hexdecoder:h0.HEX
+HEX0[2] <= hexdecoder:h0.HEX
+HEX0[3] <= hexdecoder:h0.HEX
+HEX0[4] <= hexdecoder:h0.HEX
+HEX0[5] <= hexdecoder:h0.HEX
+HEX0[6] <= hexdecoder:h0.HEX
+Clock_50 => Clock_50.IN1
+
+
+|part2|rateDivider:rd0
+SW[0] => Equal0.IN1
+SW[0] => Equal1.IN0
+SW[0] => Equal3.IN1
+SW[0] => Equal5.IN1
+SW[1] => Equal0.IN0
+SW[1] => Equal1.IN1
+SW[1] => Equal3.IN0
+SW[1] => Equal5.IN0
+givenCLK => counter[0].CLK
+givenCLK => counter[1].CLK
+givenCLK => counter[2].CLK
+givenCLK => counter[3].CLK
+givenCLK => counter[4].CLK
+givenCLK => counter[5].CLK
+givenCLK => counter[6].CLK
+givenCLK => counter[7].CLK
+givenCLK => counter[8].CLK
+givenCLK => counter[9].CLK
+givenCLK => counter[10].CLK
+givenCLK => counter[11].CLK
+givenCLK => counter[12].CLK
+givenCLK => counter[13].CLK
+givenCLK => counter[14].CLK
+givenCLK => counter[15].CLK
+givenCLK => counter[16].CLK
+givenCLK => counter[17].CLK
+givenCLK => counter[18].CLK
+givenCLK => counter[19].CLK
+givenCLK => counter[20].CLK
+givenCLK => counter[21].CLK
+givenCLK => counter[22].CLK
+givenCLK => counter[23].CLK
+givenCLK => counter[24].CLK
+givenCLK => counter[25].CLK
+givenCLK => Enable~reg0.CLK
+Enable <= Enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Reset_n => counter[0].ACLR
+Reset_n => counter[1].ACLR
+Reset_n => counter[2].ACLR
+Reset_n => counter[3].ACLR
+Reset_n => counter[4].ACLR
+Reset_n => counter[5].ACLR
+Reset_n => counter[6].ACLR
+Reset_n => counter[7].ACLR
+Reset_n => counter[8].ACLR
+Reset_n => counter[9].ACLR
+Reset_n => counter[10].ACLR
+Reset_n => counter[11].ACLR
+Reset_n => counter[12].ACLR
+Reset_n => counter[13].ACLR
+Reset_n => counter[14].ACLR
+Reset_n => counter[15].ACLR
+Reset_n => counter[16].ACLR
+Reset_n => counter[17].ACLR
+Reset_n => counter[18].ACLR
+Reset_n => counter[19].ACLR
+Reset_n => counter[20].ACLR
+Reset_n => counter[21].ACLR
+Reset_n => counter[22].ACLR
+Reset_n => counter[23].ACLR
+Reset_n => counter[24].ACLR
+Reset_n => counter[25].ACLR
+Reset_n => Enable~reg0.ACLR
+
+
+|part2|hexdecoder:h0
+HEX[0] <= segment0:seg0.out
+HEX[1] <= segment1:seg1.out
+HEX[2] <= segment2:seg2.out
+HEX[3] <= segment3:seg3.out
+HEX[4] <= segment4:seg4.out
+HEX[5] <= segment5:seg5.out
+HEX[6] <= segment6:seg6.out
+NUM[0] => NUM[0].IN7
+NUM[1] => NUM[1].IN7
+NUM[2] => NUM[2].IN7
+NUM[3] => NUM[3].IN7
+
+
+|part2|hexdecoder:h0|segment0:seg0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:h0|segment1:seg1
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:h0|segment2:seg2
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:h0|segment3:seg3
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:h0|segment4:seg4
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:h0|segment5:seg5
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:h0|segment6:seg6
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+

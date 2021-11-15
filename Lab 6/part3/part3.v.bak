@@ -1,0 +1,21 @@
+//Sw[7:0] data_in
+
+//KEY[0] synchronous reset when pressed
+//KEY[1] go signal
+
+//LEDR displays result
+//HEX0 & HEX1 also displays result
+
+module part2(SW, KEY, CLOCK_50, LEDR, HEX0, HEX1);
+    input [7:0] SW;
+    input [1:0] KEY;
+    input CLOCK_50;
+    output [7:0] LEDR;
+    output [6:0] HEX0, HEX1;
+
+    wire resetn;
+    wire go;
+
+    wire [7:0] data_result;
+    assign go = ~KEY[1];
+    assign resetn = KEY[0];

@@ -1,0 +1,105 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 6/part2
+vcontrol
+Z1 !s110 1509204312
+!i10b 1
+!s100 om9CV<UUhJTkhjP:o<8I:0
+IcfoEWTHac6[UK5LJJZdoO2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1509204308
+Z4 8part2.v
+Z5 Fpart2.v
+L0 99
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1509204312.000000
+Z8 !s107 part2.v|
+Z9 !s90 -reportprogress|300|part2.v|
+!i113 1
+vdatapath
+R1
+!i10b 1
+!s100 3<VN34F_S]zGBD957b4@`1
+I`:?iUo2nUefd3T^Sf>=L72
+R2
+R0
+R3
+R4
+R5
+L0 196
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vhex_decoder
+R1
+!i10b 1
+!s100 Pc2I@^8_QEc2zLVbm_<fh2
+IzcQfKkK[EE0h66`kQMW5J1
+R2
+R0
+R3
+R4
+R5
+L0 293
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vpart2
+R1
+!i10b 1
+!s100 b1S^Y4c`Aa24@2ii=c28D0
+I_1AnIlAckb<JEODB:6fng1
+R2
+R0
+R3
+R4
+R5
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vpart2_given
+R1
+!i10b 1
+!s100 3R]GZ=ZoCYh=QIbFP1zo12
+IH9N<5n7TSL5nONjdJUDXm1
+R2
+R0
+R3
+R4
+R5
+L0 45
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1

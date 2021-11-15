@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 3/par2/simulation/qsim
+vpart2
+Z1 !s110 1506127558
+!i10b 1
+!s100 FOm_SJJD>]NN3;=`?N]_f1
+IYFNM[Sh_U6<=5O=ZQ:n9W3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1506127557
+8part2.vo
+Fpart2.vo
+L0 32
+Z3 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z4 !s108 1506127558.000000
+!s107 part2.vo|
+!s90 -work|work|part2.vo|
+!i113 1
+Z5 o-work work
+vpart2_vlg_vec_tst
+R1
+!i10b 1
+!s100 XT1AK:QKYZD5eE8G`YeE60
+Il<[OIfcY7IH_<?hMKh33D3
+R2
+R0
+w1506127556
+8test.vwf.vt
+Ftest.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 test.vwf.vt|
+!s90 -work|work|test.vwf.vt|
+!i113 1
+R5

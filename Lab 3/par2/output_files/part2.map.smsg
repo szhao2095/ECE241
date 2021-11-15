@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at part2.v(7): object "HEX0" differs only in case from object "hex0" in the same scope File: D:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 3/par2/part2.v Line: 7
+Info (10281): Verilog HDL Declaration information at part2.v(7): object "HEX1" differs only in case from object "hex1" in the same scope File: D:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 3/par2/part2.v Line: 7
+Info (10281): Verilog HDL Declaration information at part2.v(7): object "HEX3" differs only in case from object "hex3" in the same scope File: D:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 3/par2/part2.v Line: 7
+Info (10281): Verilog HDL Declaration information at part2.v(7): object "HEX5" differs only in case from object "hex5" in the same scope File: D:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 3/par2/part2.v Line: 7

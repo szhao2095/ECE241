@@ -1,0 +1,20 @@
+vlib work
+vlog part2.v
+vsim part2
+log {/*}
+add wave {/*}
+
+#sw 3~0 is for loading in
+#sw 8 put to 1 for parallel load
+#sw 9 is clear active low
+#sw 1~0 is for rate divider
+
+force -deposit /Clock_50 1 0, 0 {1 ns} -repeat 2
+
+
+force {SW[9]} 0
+run 1ns
+
+force {SW[9]} 1
+force {SW[1:0]} 11
+run 50000ns

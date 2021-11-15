@@ -1,0 +1,82 @@
+vlib work
+vlog part2.v
+vsim control
+log {/*}
+add wave {/*}
+
+#Sw[7:0] data_in
+
+#KEY[0] synchronous reset when pressed
+#KEY[1] go signal
+
+#LEDR displays result
+#HEX0 & HEX1 also displays result
+
+force -deposit /clk 1 0, 0 {1 ps} -repeat 2
+
+force resetn 1
+run 5 ns
+
+force resetn 0
+run 5 ns
+
+force resetn 1
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+
+
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+
+
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+
+
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+
+
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+
+
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+
+
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+
+
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+
+
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+
+
+force go 0
+run 5 ns
+force go 1
+run 5 ns
+

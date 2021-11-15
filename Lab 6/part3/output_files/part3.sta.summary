@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : -9.484
+TNS   : -63.399
+
+Type  : Slow 1100mV 85C Model Setup 'KEY[1]'
+Slack : -3.564
+TNS   : -13.231
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.227
+TNS   : -62.687
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : 0.724
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'KEY[1]'
+Slack : 0.925
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -15.264
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[1]'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : -9.302
+TNS   : -63.769
+
+Type  : Slow 1100mV 0C Model Setup 'KEY[1]'
+Slack : -3.612
+TNS   : -13.527
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.898
+TNS   : -55.656
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : 0.668
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'KEY[1]'
+Slack : 0.858
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -16.122
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[1]'
+Slack : 0.069
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : -5.773
+TNS   : -34.598
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.496
+TNS   : -45.383
+
+Type  : Fast 1100mV 85C Model Setup 'KEY[1]'
+Slack : -1.640
+TNS   : -5.960
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : 0.489
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'KEY[1]'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[1]'
+Slack : -0.102
+TNS   : -0.722
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.093
+TNS   : -2.592
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : -5.225
+TNS   : -32.440
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.916
+TNS   : -35.566
+
+Type  : Fast 1100mV 0C Model Setup 'KEY[1]'
+Slack : -1.467
+TNS   : -5.372
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.175
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'KEY[1]'
+Slack : 0.504
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[1]'
+Slack : -0.106
+TNS   : -0.803
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.090
+TNS   : -2.518
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'whereTheMagicHappens:magic0|control:control0|current_state.APlusDivisor'
+Slack : 0.440
+TNS   : 0.000
+
+------------------------------------------------------------

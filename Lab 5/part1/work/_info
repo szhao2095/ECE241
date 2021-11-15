@@ -1,0 +1,201 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 5/part1
+vhexdecoder
+Z1 !s110 1508783795
+!i10b 1
+!s100 W19`DXW4[?Y@7V=2?Ab;60
+IjiSZnYz?nAO`P[9c0d0>32
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1508346371
+Z4 8part1.v
+Z5 Fpart1.v
+L0 105
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1508783795.000000
+Z8 !s107 part1.v|
+Z9 !s90 -reportprogress|300|part1.v|
+!i113 1
+vpart1
+R1
+!i10b 1
+!s100 6[JAo?DD:bU:MQ65b>mFG0
+INAFb2cO5><XDQEQP^bI9P1
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vsegment0
+R1
+!i10b 1
+!s100 Y1n;7@zDjh53leUD@TP?C1
+IN1fRT^;EUR[8EFfQ75]6J3
+R2
+R0
+R3
+R4
+R5
+L0 168
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vsegment1
+R1
+!i10b 1
+!s100 YFe3[f3P2WDO_56nMf@[A1
+IoLM<KEi:=[a4ZhM`INOd80
+R2
+R0
+R3
+R4
+R5
+L0 176
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vsegment2
+R1
+!i10b 1
+!s100 XFe5b3?JMg5`3c;<ON>AU0
+I5RW7:L;bgSL[]YOKWf5z=3
+R2
+R0
+R3
+R4
+R5
+L0 184
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vsegment3
+R1
+!i10b 1
+!s100 7I1W3OjM_<UAiD5VAMRXU1
+I=PM;oOkOo^64?acN7ffQ60
+R2
+R0
+R3
+R4
+R5
+L0 192
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vsegment4
+R1
+!i10b 1
+!s100 9^<V;b3>8@3T>Qzm_`;4D0
+INIiW>D^e[CA><Q1HI:hBb3
+R2
+R0
+R3
+R4
+R5
+L0 200
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vsegment5
+R1
+!i10b 1
+!s100 5RkMT5;1dkLD6kTCQF5jh1
+I>7PY=65`lDh6XPS<:0YBP1
+R2
+R0
+R3
+R4
+R5
+L0 208
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vsegment6
+R1
+!i10b 1
+!s100 dN@<ZcF1T5DzKdjgNY?TR2
+IBNo<c1Nk?zj@c;[Z^_^Y_3
+R2
+R0
+R3
+R4
+R5
+L0 216
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vTFF_POS_AR_LOW
+R1
+!i10b 1
+!s100 1[ffUh17RXOz0XIb:AJd33
+IIf>H4O@3`L]h7M:hT8I^j3
+R2
+R0
+R3
+R4
+R5
+L0 88
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+n@t@f@f_@p@o@s_@a@r_@l@o@w

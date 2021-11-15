@@ -1,0 +1,9 @@
+
+State Machine - |part2|handler:u0|control:u1|current_state
+Name current_state.BLACKSCREEN current_state.SQUARE current_state.LOAD_Y_WAIT current_state.LOAD_Y current_state.LOAD_X_WAIT current_state.LOAD_X 
+current_state.LOAD_X 0 0 0 0 0 0 
+current_state.LOAD_X_WAIT 0 0 0 0 1 1 
+current_state.LOAD_Y 0 0 0 1 0 1 
+current_state.LOAD_Y_WAIT 0 0 1 0 0 1 
+current_state.SQUARE 0 1 0 0 0 1 
+current_state.BLACKSCREEN 1 0 0 0 0 1 

@@ -1,0 +1,15 @@
+vlib work
+vlog part2.v
+vsim part2
+log {/*}
+add wave {/*}
+
+#key0 clock
+#sw1 T
+#sw0 clear
+
+#clearing register
+
+force {SW[0]} 1
+force {KEY[0]} 0
+run 5ns

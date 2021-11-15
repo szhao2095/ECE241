@@ -1,0 +1,353 @@
+|part3
+LEDR[0] <= register_8b[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= register_8b[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= register_8b[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= register_8b[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= register_8b[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= register_8b[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= register_8b[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= register_8b[7].DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => ~NO_FANOUT~
+SW[9] => SW[9].IN8
+KEY[0] => KEY[0].IN8
+KEY[1] => KEY[1].IN8
+KEY[2] => KEY[2].IN8
+KEY[3] => KEY[3].IN8
+
+
+|part3|subCircuit:u0
+right => right.IN1
+left => left.IN1
+secondaryLeft => secondaryLeft.IN1
+loadn_ParallelLoadn => loadn_ParallelLoadn.IN1
+LoadLeft_RotateRight => LoadLeft_RotateRight.IN1
+ASRightSel => ASRightSel.IN1
+Clock => Clock.IN1
+reset => reset.IN1
+D => D.IN1
+Q <= DFF_SR_HIGH:u0.Q
+
+
+|part3|subCircuit:u0|mux2to1:ASRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u0|mux2to1:RotateRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u0|mux2to1:ParallelLoadnMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u0|DFF_SR_HIGH:u0
+reset => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+D => Q.DATAA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u1
+right => right.IN1
+left => left.IN1
+secondaryLeft => secondaryLeft.IN1
+loadn_ParallelLoadn => loadn_ParallelLoadn.IN1
+LoadLeft_RotateRight => LoadLeft_RotateRight.IN1
+ASRightSel => ASRightSel.IN1
+Clock => Clock.IN1
+reset => reset.IN1
+D => D.IN1
+Q <= DFF_SR_HIGH:u0.Q
+
+
+|part3|subCircuit:u1|mux2to1:ASRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u1|mux2to1:RotateRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u1|mux2to1:ParallelLoadnMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u1|DFF_SR_HIGH:u0
+reset => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+D => Q.DATAA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u2
+right => right.IN1
+left => left.IN1
+secondaryLeft => secondaryLeft.IN1
+loadn_ParallelLoadn => loadn_ParallelLoadn.IN1
+LoadLeft_RotateRight => LoadLeft_RotateRight.IN1
+ASRightSel => ASRightSel.IN1
+Clock => Clock.IN1
+reset => reset.IN1
+D => D.IN1
+Q <= DFF_SR_HIGH:u0.Q
+
+
+|part3|subCircuit:u2|mux2to1:ASRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u2|mux2to1:RotateRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u2|mux2to1:ParallelLoadnMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u2|DFF_SR_HIGH:u0
+reset => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+D => Q.DATAA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u3
+right => right.IN1
+left => left.IN1
+secondaryLeft => secondaryLeft.IN1
+loadn_ParallelLoadn => loadn_ParallelLoadn.IN1
+LoadLeft_RotateRight => LoadLeft_RotateRight.IN1
+ASRightSel => ASRightSel.IN1
+Clock => Clock.IN1
+reset => reset.IN1
+D => D.IN1
+Q <= DFF_SR_HIGH:u0.Q
+
+
+|part3|subCircuit:u3|mux2to1:ASRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u3|mux2to1:RotateRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u3|mux2to1:ParallelLoadnMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u3|DFF_SR_HIGH:u0
+reset => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+D => Q.DATAA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u4
+right => right.IN1
+left => left.IN1
+secondaryLeft => secondaryLeft.IN1
+loadn_ParallelLoadn => loadn_ParallelLoadn.IN1
+LoadLeft_RotateRight => LoadLeft_RotateRight.IN1
+ASRightSel => ASRightSel.IN1
+Clock => Clock.IN1
+reset => reset.IN1
+D => D.IN1
+Q <= DFF_SR_HIGH:u0.Q
+
+
+|part3|subCircuit:u4|mux2to1:ASRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u4|mux2to1:RotateRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u4|mux2to1:ParallelLoadnMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u4|DFF_SR_HIGH:u0
+reset => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+D => Q.DATAA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u5
+right => right.IN1
+left => left.IN1
+secondaryLeft => secondaryLeft.IN1
+loadn_ParallelLoadn => loadn_ParallelLoadn.IN1
+LoadLeft_RotateRight => LoadLeft_RotateRight.IN1
+ASRightSel => ASRightSel.IN1
+Clock => Clock.IN1
+reset => reset.IN1
+D => D.IN1
+Q <= DFF_SR_HIGH:u0.Q
+
+
+|part3|subCircuit:u5|mux2to1:ASRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u5|mux2to1:RotateRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u5|mux2to1:ParallelLoadnMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u5|DFF_SR_HIGH:u0
+reset => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+D => Q.DATAA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u6
+right => right.IN1
+left => left.IN1
+secondaryLeft => secondaryLeft.IN1
+loadn_ParallelLoadn => loadn_ParallelLoadn.IN1
+LoadLeft_RotateRight => LoadLeft_RotateRight.IN1
+ASRightSel => ASRightSel.IN1
+Clock => Clock.IN1
+reset => reset.IN1
+D => D.IN1
+Q <= DFF_SR_HIGH:u0.Q
+
+
+|part3|subCircuit:u6|mux2to1:ASRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u6|mux2to1:RotateRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u6|mux2to1:ParallelLoadnMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u6|DFF_SR_HIGH:u0
+reset => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+D => Q.DATAA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u7
+right => right.IN1
+left => left.IN1
+secondaryLeft => secondaryLeft.IN1
+loadn_ParallelLoadn => loadn_ParallelLoadn.IN1
+LoadLeft_RotateRight => LoadLeft_RotateRight.IN1
+ASRightSel => ASRightSel.IN1
+Clock => Clock.IN1
+reset => reset.IN1
+D => D.IN1
+Q <= DFF_SR_HIGH:u0.Q
+
+
+|part3|subCircuit:u7|mux2to1:ASRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u7|mux2to1:RotateRightMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u7|mux2to1:ParallelLoadnMux
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|subCircuit:u7|DFF_SR_HIGH:u0
+reset => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+D => Q.DATAA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

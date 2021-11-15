@@ -1,0 +1,29 @@
+# do Lab1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:40:03 on Sep 17,2017
+# vlog -work work Lab1.vo 
+# -- Compiling module Lab1
+# 
+# Top level modules:
+# 	Lab1
+# End time: 20:40:03 on Sep 17,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:40:03 on Sep 17,2017
+# vlog -work work Lab1.vwf.vt 
+# -- Compiling module Lab1_vlg_vec_tst
+# 
+# Top level modules:
+# 	Lab1_vlg_vec_tst
+# End time: 20:40:03 on Sep 17,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Lab1_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 20:40:03 on Sep 17,2017
+# Loading work.Lab1_vlg_vec_tst
+# Loading work.Lab1
+# ** Note: $finish    : Lab1.vwf.vt(45)
+#    Time: 200 ns  Iteration: 0  Instance: /Lab1_vlg_vec_tst
+# End time: 20:40:03 on Sep 17,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -1,0 +1,318 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/project
+vcontrol
+Z1 !s110 1511641400
+!i10b 1
+!s100 4PZ<kf<n>b51?ZBa6]a]V1
+IF3l7I6dccJ3J=S3YmBeD^1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1511641395
+Z4 8project_2048_game.v
+Z5 Fproject_2048_game.v
+L0 497
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1511641400.000000
+Z8 !s107 GameRAM2port.v|GameRAM.v|vga_pll.v|vga_controller.v|vga_address_translator.v|vga_adapter.v|project_2048_game.v|
+Z9 !s90 -reportprogress|300|project_2048_game.v|vga_adapter.v|vga_address_translator.v|vga_controller.v|vga_pll.v|GameRAM.v|GameRAM2port.v|
+!i113 1
+vcounter_4b
+Z10 !s110 1511641401
+!i10b 1
+!s100 0^gQWkZF;O40Zn=l]G6N>2
+IXY?Y7ajY1][djN4?a1jC72
+R2
+R0
+R3
+R4
+R5
+L0 6004
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vdatapath
+R10
+!i10b 1
+!s100 hOnzifF0f]7XD<A1_gOO?2
+If@oQAhg?[b6YGWGUVVSSW3
+R2
+R0
+R3
+R4
+R5
+L0 1118
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vGameRAM
+R10
+!i10b 1
+!s100 @il@Q1f3VLjj;QIJ5W4Dz2
+I3ImoQbBCo^[Zm=>L3><E`3
+R2
+R0
+w1510279230
+8GameRAM.v
+FGameRAM.v
+Z11 L0 40
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+n@game@r@a@m
+vGameRAM2port
+R10
+!i10b 1
+!s100 B15_OADFTD3ioa=_PAUhQ3
+I@lXM6mU2?_PEP;@_5^iWI3
+R2
+R0
+w1510534207
+8GameRAM2port.v
+FGameRAM2port.v
+R11
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+n@game@r@a@m2port
+vhandler
+R1
+!i10b 1
+!s100 HVX?BbO]E=ao6eNK7z8hH3
+I:nfYZW]M?c8iK1mF7aR?E1
+R2
+R0
+R3
+R4
+R5
+L0 154
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vhex_decoder
+R10
+!i10b 1
+!s100 W4VHfMgzkGmz?Kd9eQ_JC1
+IKSOn0JV_Zn[K2=DQo1^W83
+R2
+R0
+R3
+R4
+R5
+L0 6021
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vkeyboard_inner_driver
+R10
+!i10b 1
+!s100 L?7A2JEN?R?JJ2W?4;4IY1
+IfG[<L[[9nX08@@36C>^Yd3
+R2
+R0
+R3
+R4
+R5
+L0 6175
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vkeyboard_press_driver
+R10
+!i10b 1
+!s100 oNNb5eG6Kf2clOKA2VX5J2
+IT`J9aeeW91@HEb:Q?6Le`1
+R2
+R0
+R3
+R4
+R5
+L0 6047
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vLinear_FB_Shift_Reg
+R10
+!i10b 1
+!s100 FCbTG>Y7Qn_zH81GB=^d]3
+IoMGDUJKj9;YeAj5]IX58n0
+R2
+R0
+R3
+R4
+R5
+L0 5983
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+n@linear_@f@b_@shift_@reg
+vproject_2048_game
+R1
+!i10b 1
+!s100 cbUAdRoed8L`Tj9996DeE1
+I6=Hg1UIFz<VnW@_N=B5aF2
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vRateDivider_60HZ
+R1
+!i10b 1
+!s100 @2aTcSTEnQaWNkH]BUeLo3
+IP6MjMF^on[KRM4iCBA7dH3
+R2
+R0
+R3
+R4
+R5
+L0 476
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+n@rate@divider_60@h@z
+vvga_adapter
+R10
+!i10b 1
+!s100 2=;e8A[I4Xdoc6^8CL5PZ2
+I[g0M?og3^CC9X6Ucz_8MM3
+R2
+R0
+Z12 w1224522560
+8vga_adapter.v
+Fvga_adapter.v
+L0 78
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vvga_address_translator
+R10
+!i10b 1
+!s100 C0DfW0_9[5co`@boeR]Pi1
+IUc?mi94?_D8J5^YT80Q@G1
+R2
+R0
+R12
+8vga_address_translator.v
+Fvga_address_translator.v
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vvga_controller
+R10
+!i10b 1
+!s100 e6ZP6iRSUQ77>][ahP0EJ1
+IQeNBH2m870oznAM97ojJD3
+R2
+R0
+R12
+8vga_controller.v
+Fvga_controller.v
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vvga_pll
+R10
+!i10b 1
+!s100 4XSTjD`VEiamX^n1@5J`b3
+IeBSzjP?4;W=;AEC^]IQNT0
+R2
+R0
+R12
+8vga_pll.v
+Fvga_pll.v
+L0 36
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1

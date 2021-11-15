@@ -1,0 +1,130 @@
+|hexdecoder
+HEX0[0] <= segment0:seg0.out
+HEX0[1] <= segment1:seg1.out
+HEX0[2] <= segment2:seg2.out
+HEX0[3] <= segment3:seg3.out
+HEX0[4] <= segment4:seg4.out
+HEX0[5] <= segment5:seg5.out
+HEX0[6] <= segment6:seg6.out
+SW[0] => SW[0].IN7
+SW[1] => SW[1].IN7
+SW[2] => SW[2].IN7
+SW[3] => SW[3].IN7
+
+
+|hexdecoder|segment0:seg0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hexdecoder|segment1:seg1
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hexdecoder|segment2:seg2
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hexdecoder|segment3:seg3
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hexdecoder|segment4:seg4
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hexdecoder|segment5:seg5
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hexdecoder|segment6:seg6
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,162 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 7/part2
+vcontrol
+Z1 !s110 1509992418
+!i10b 1
+!s100 9z0gj8<W`Mc5Ho?Hf?bLh2
+Iz1kkmV=7ShdJHCDhKNdm[1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1509992356
+Z4 8part2.v
+Z5 Fpart2.v
+L0 148
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1509992418.000000
+Z8 !s107 vga_pll.v|vga_controller.v|vga_address_translator.v|vga_adapter.v|part2.v|
+Z9 !s90 -reportprogress|300|part2.v|vga_adapter.v|vga_address_translator.v|vga_controller.v|vga_pll.v|
+!i113 1
+vdatapath
+R1
+!i10b 1
+!s100 k69W_O:dn]dOoEGhMW5hl2
+IFMUXZ:?]ee>cnana@<]la3
+R2
+R0
+R3
+R4
+R5
+L0 218
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vhandler
+R1
+!i10b 1
+!s100 ;P]bk5X1z8RGSB@X9A^[80
+IVK>_oP>IUGjBI2KkRKhB40
+R2
+R0
+R3
+R4
+R5
+L0 99
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vpart2
+R1
+!i10b 1
+!s100 ZC=eAdJ<5P[YaM69HdRZd2
+Ifa>4ZK:io[8kl89TDYdVb2
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vvga_adapter
+R1
+!i10b 1
+!s100 g`l@1_h6le<E9SVW1`WW[3
+I;kXXlRgkY@@UVYkkF5jNj0
+R2
+R0
+w1509670865
+8vga_adapter.v
+Fvga_adapter.v
+L0 78
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vvga_address_translator
+R1
+!i10b 1
+!s100 C0DfW0_9[5co`@boeR]Pi1
+IUc?mi94?_D8J5^YT80Q@G1
+R2
+R0
+Z10 w1224522560
+8vga_address_translator.v
+Fvga_address_translator.v
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vvga_controller
+R1
+!i10b 1
+!s100 e6ZP6iRSUQ77>][ahP0EJ1
+IQeNBH2m870oznAM97ojJD3
+R2
+R0
+R10
+8vga_controller.v
+Fvga_controller.v
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vvga_pll
+R1
+!i10b 1
+!s100 4XSTjD`VEiamX^n1@5J`b3
+IeBSzjP?4;W=;AEC^]IQNT0
+R2
+R0
+R10
+8vga_pll.v
+Fvga_pll.v
+L0 36
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1

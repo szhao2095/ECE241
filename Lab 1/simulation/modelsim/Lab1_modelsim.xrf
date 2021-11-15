@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, D:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 1/Lab1.bdf
+source_file = 1, D:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 1/Lab1.vwf
+source_file = 1, D:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 1/db/Lab1.cbx.xml
+design_name = Lab1
+instance = comp, \LEDR[1]~output , LEDR[1]~output, Lab1, 1
+instance = comp, \LEDR[0]~output , LEDR[0]~output, Lab1, 1
+instance = comp, \SW[4]~input , SW[4]~input, Lab1, 1
+instance = comp, \SW[3]~input , SW[3]~input, Lab1, 1
+instance = comp, \SW[5]~input , SW[5]~input, Lab1, 1
+instance = comp, \inst7~0 , inst7~0, Lab1, 1
+instance = comp, \SW[2]~input , SW[2]~input, Lab1, 1
+instance = comp, \SW[0]~input , SW[0]~input, Lab1, 1
+instance = comp, \SW[1]~input , SW[1]~input, Lab1, 1
+instance = comp, \inst3~0 , inst3~0, Lab1, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Lab1, 1

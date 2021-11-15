@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 6/part3
+vcontrol
+Z1 !s110 1509395071
+!i10b 1
+!s100 So7BUYL@V02DnWLWJkDI:2
+I1WVo]VfYo4@F<?35kY???3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1509393741
+Z4 8part3.v
+Z5 Fpart3.v
+L0 115
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1509395071.000000
+Z8 !s107 part3.v|
+Z9 !s90 -reportprogress|300|part3.v|
+!i113 1
+vdatapath
+R1
+!i10b 1
+!s100 lAA1gYZ?GfDgQlY;SZjW`2
+IAL85dHSM[[]IKAURSM=>`3
+R2
+R0
+R3
+R4
+R5
+L0 251
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vhex_decoder
+R1
+!i10b 1
+!s100 ha:@JhX7GkD76_RilU3N[3
+IR0O3QhScCV9]K``1UBJS21
+R2
+R0
+R3
+R4
+R5
+L0 326
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vpart3
+R1
+!i10b 1
+!s100 Vg[;2zJ0f5TlHi66mZW;l0
+Ic]<A6;[7ni>ANP_HN3^9X2
+R2
+R0
+R3
+R4
+R5
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+vwhereTheMagicHappens
+R1
+!i10b 1
+!s100 8A:HGd:d91S=@TNYR2Q:30
+IMBHRj8`=J?ojW?H:jn<;l3
+R2
+R0
+R3
+R4
+R5
+L0 72
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+nwhere@the@magic@happens

@@ -1,0 +1,48 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 2
+vmux
+Z1 !s110 1506368013
+!i10b 1
+!s100 m2TAEIPWeURR=9Z8Sn1UV0
+IDlNY>Iji^3I5BC5Egj7L?1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1505961177
+Z4 8mux.v
+Z5 Fmux.v
+L0 8
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1506368013.000000
+Z8 !s107 mux.v|
+Z9 !s90 -reportprogress|300|mux.v|
+!i113 1
+vmux2to1
+R1
+!i10b 1
+!s100 E3W3?8eS@ilSN10:PB`Yc0
+I28L>loO5@96[WKEbHWIXi3
+R2
+R0
+R3
+R4
+R5
+L0 37
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1

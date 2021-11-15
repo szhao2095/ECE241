@@ -1,0 +1,91 @@
+`timescale 1ns / 1ns // `timescale time_unit/time_precision
+
+module part3(LEDR, SW, KEY);
+
+	input [9:0] SW;
+	input [3:0] KEY;
+	output [7:0] LEDR;
+	
+	reg [7:0] register_8b;
+	
+	subCircuit u0(
+		.right(register_8b[7]), 
+		.left(register_8b[1]), 
+		.LoadLeft(KEY[2]), 
+		.D(SW[0]), 
+		.loadn(KEY[1]), 
+		.Clock(KEY[0]), 
+		.reset(SW[9]), 
+		.Q(register_8b[0])
+	);
+
+	assign LEDR[7:0] = register_8b[7:0];
+
+endmodule
+
+module DFF_SR_HIGH(reset, Clock, D, Q);
+
+	input reset, Clock;
+	input D;
+	output Q;
+	
+	reg Q;
+
+	always @(posedge Clock) // triggered every time clock rises
+	begin
+		if (reset) 				// when reset is 1 (note this is tested on every rising clock edge) SYNCHRONOUS ACTIVE HIGH RESET
+			Q <= 0;			   // q is set to 0. Note that the assignment uses <=
+		else 						// when reset is not 0
+			Q <= D; 				// value of d passes through to output q
+	end
+
+endmodule
+
+module mux2to1(x, y, s, m);
+
+    input x, y, s;
+    output m;
+  
+    //assign m = s & y | ~s & x;
+	 
+    assign m = s ? y : x;
+
+endmodule
+
+module subCircuit(right, left, secondaryLeft, LoadLeft, D, loadn, Clock, reset, Q);
+
+	input right, left, LoadLeft, D, loadn, Clock, reset;
+	output Q;
+	
+	wire ASRightMuxOut, RotateRightMuxOut, ParallelLoadnMuxOut;
+	
+	mux2to1 ASRightMux(
+		.x(left),
+		.y(secondaryLeft),
+		.s(LoadLeft),
+		.m(ASRightMuxOut)
+	);
+	
+	mux2to1 RotateRightMux(
+		.x(right),
+		.y(ASRightMuxOut),
+		.s(LoadLeft),
+		.m(RotateRightMuxOut)
+	);
+	
+	mux2to1 ParallelLoadnMux(
+		.x(D),
+		.y(RotateRightMuxOut),
+		.s(loadn),
+		.m(ParallelLoadnMuxOut)
+	);
+	
+	DFF_SR_HIGH u0(
+		.reset(reset), 
+		.Clock(Clock), 
+		.D(ParallelLoadnMuxOut), 
+		.Q(Q)
+	);
+	
+endmodule
+

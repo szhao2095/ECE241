@@ -1,0 +1,631 @@
+|part2
+LEDR[0] <= adder1sum.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= adder2sum.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= adder3sum.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= adder4sum.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= adder4out.DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => SW[8].IN1
+SW[9] => ~NO_FANOUT~
+HEX0[0] <= hexdecoder:hex0.HEX
+HEX0[1] <= hexdecoder:hex0.HEX
+HEX0[2] <= hexdecoder:hex0.HEX
+HEX0[3] <= hexdecoder:hex0.HEX
+HEX0[4] <= hexdecoder:hex0.HEX
+HEX0[5] <= hexdecoder:hex0.HEX
+HEX0[6] <= hexdecoder:hex0.HEX
+HEX1[0] <= hexdecoder:hex1.HEX
+HEX1[1] <= hexdecoder:hex1.HEX
+HEX1[2] <= hexdecoder:hex1.HEX
+HEX1[3] <= hexdecoder:hex1.HEX
+HEX1[4] <= hexdecoder:hex1.HEX
+HEX1[5] <= hexdecoder:hex1.HEX
+HEX1[6] <= hexdecoder:hex1.HEX
+HEX3[0] <= hexdecoder:hex3.HEX
+HEX3[1] <= hexdecoder:hex3.HEX
+HEX3[2] <= hexdecoder:hex3.HEX
+HEX3[3] <= hexdecoder:hex3.HEX
+HEX3[4] <= hexdecoder:hex3.HEX
+HEX3[5] <= hexdecoder:hex3.HEX
+HEX3[6] <= hexdecoder:hex3.HEX
+HEX5[0] <= hexdecoder:hex5.HEX
+HEX5[1] <= hexdecoder:hex5.HEX
+HEX5[2] <= hexdecoder:hex5.HEX
+HEX5[3] <= hexdecoder:hex5.HEX
+HEX5[4] <= hexdecoder:hex5.HEX
+HEX5[5] <= hexdecoder:hex5.HEX
+HEX5[6] <= hexdecoder:hex5.HEX
+
+
+|part2|adder:adder1
+a => xor1.IN0
+b => b.IN1
+cin => cin.IN1
+cout <= mux2to1:u0.m
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|adder:adder1|mux2to1:u0
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|adder:adder2
+a => xor1.IN0
+b => b.IN1
+cin => cin.IN1
+cout <= mux2to1:u0.m
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|adder:adder2|mux2to1:u0
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|adder:adder3
+a => xor1.IN0
+b => b.IN1
+cin => cin.IN1
+cout <= mux2to1:u0.m
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|adder:adder3|mux2to1:u0
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|adder:adder4
+a => xor1.IN0
+b => b.IN1
+cin => cin.IN1
+cout <= mux2to1:u0.m
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|adder:adder4|mux2to1:u0
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex0
+HEX[0] <= segment0:seg0.out
+HEX[1] <= segment1:seg1.out
+HEX[2] <= segment2:seg2.out
+HEX[3] <= segment3:seg3.out
+HEX[4] <= segment4:seg4.out
+HEX[5] <= segment5:seg5.out
+HEX[6] <= segment6:seg6.out
+NUM3 => NUM3.IN7
+NUM2 => NUM2.IN7
+NUM1 => NUM1.IN7
+NUM0 => NUM0.IN7
+
+
+|part2|hexdecoder:hex0|segment0:seg0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex0|segment1:seg1
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex0|segment2:seg2
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex0|segment3:seg3
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex0|segment4:seg4
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex0|segment5:seg5
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex0|segment6:seg6
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex1
+HEX[0] <= segment0:seg0.out
+HEX[1] <= segment1:seg1.out
+HEX[2] <= segment2:seg2.out
+HEX[3] <= segment3:seg3.out
+HEX[4] <= segment4:seg4.out
+HEX[5] <= segment5:seg5.out
+HEX[6] <= segment6:seg6.out
+NUM3 => NUM3.IN7
+NUM2 => NUM2.IN7
+NUM1 => NUM1.IN7
+NUM0 => NUM0.IN7
+
+
+|part2|hexdecoder:hex1|segment0:seg0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex1|segment1:seg1
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex1|segment2:seg2
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex1|segment3:seg3
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex1|segment4:seg4
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex1|segment5:seg5
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex1|segment6:seg6
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex3
+HEX[0] <= segment0:seg0.out
+HEX[1] <= segment1:seg1.out
+HEX[2] <= segment2:seg2.out
+HEX[3] <= segment3:seg3.out
+HEX[4] <= segment4:seg4.out
+HEX[5] <= segment5:seg5.out
+HEX[6] <= segment6:seg6.out
+NUM3 => NUM3.IN7
+NUM2 => NUM2.IN7
+NUM1 => NUM1.IN7
+NUM0 => NUM0.IN7
+
+
+|part2|hexdecoder:hex3|segment0:seg0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex3|segment1:seg1
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex3|segment2:seg2
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex3|segment3:seg3
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex3|segment4:seg4
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex3|segment5:seg5
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex3|segment6:seg6
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex5
+HEX[0] <= segment0:seg0.out
+HEX[1] <= segment1:seg1.out
+HEX[2] <= segment2:seg2.out
+HEX[3] <= segment3:seg3.out
+HEX[4] <= segment4:seg4.out
+HEX[5] <= segment5:seg5.out
+HEX[6] <= segment6:seg6.out
+NUM3 => NUM3.IN7
+NUM2 => NUM2.IN7
+NUM1 => NUM1.IN7
+NUM0 => NUM0.IN7
+
+
+|part2|hexdecoder:hex5|segment0:seg0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex5|segment1:seg1
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex5|segment2:seg2
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex5|segment3:seg3
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN0
+c2 => out.IN1
+c2 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex5|segment4:seg4
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c1 => out.IN1
+c1 => out.IN0
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex5|segment5:seg5
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|hexdecoder:hex5|segment6:seg6
+c3 => out.IN0
+c3 => out.IN0
+c3 => out.IN0
+c2 => out.IN1
+c2 => out.IN0
+c2 => out.IN1
+c1 => out.IN1
+c1 => out.IN0
+c1 => out.IN1
+c0 => out.IN1
+c0 => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+

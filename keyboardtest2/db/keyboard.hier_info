@@ -1,0 +1,79 @@
+|keyboard
+CLOCK_50 => CLOCK_50.IN1
+LEDR[0] <= keyboard_press_driver:u0.sig_move
+LEDR[1] <= keyboard_press_driver:u0.sig_move
+LEDR[2] <= keyboard_press_driver:u0.sig_move
+LEDR[3] <= keyboard_press_driver:u0.sig_move
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= keyboard_press_driver:u0.makeBreak
+LEDR[9] <= keyboard_press_driver:u0.KEYBOARD_RESET
+PS2_DAT => PS2_DAT.IN1
+PS2_CLK => PS2_CLK.IN1
+SW[9] => SW[9].IN1
+
+
+|keyboard|keyboard_press_driver:u0
+CLOCK_50 => CLOCK_50.IN1
+valid <= valid~reg0.DB_MAX_OUTPUT_PORT_TYPE
+makeBreak <= makeBreak~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outCode[0] <= outCode[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outCode[1] <= outCode[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outCode[2] <= outCode[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outCode[3] <= outCode[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outCode[4] <= outCode[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outCode[5] <= outCode[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outCode[6] <= outCode[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outCode[7] <= outCode[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sig_move[0] <= sig_move[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sig_move[1] <= sig_move[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sig_move[2] <= sig_move[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sig_move[3] <= sig_move[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+KEYBOARD_RESET <= KEYBOARD_RESET~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PS2_DAT => PS2_DAT.IN1
+PS2_CLK => PS2_CLK.IN1
+reset => reset.IN1
+
+
+|keyboard|keyboard_press_driver:u0|keyboard_inner_driver:kbd
+keyboard_clk => filter[7].DATAIN
+keyboard_data => shiftin.DATAB
+keyboard_data => always3.IN1
+clock50 => clock.CLK
+reset => incnt.OUTPUTSELECT
+reset => incnt.OUTPUTSELECT
+reset => incnt.OUTPUTSELECT
+reset => incnt.OUTPUTSELECT
+reset => read_char.OUTPUTSELECT
+reset => scan_code[1]~reg0.ENA
+reset => scan_code[0]~reg0.ENA
+reset => scan_code[2]~reg0.ENA
+reset => scan_code[3]~reg0.ENA
+reset => scan_code[4]~reg0.ENA
+reset => scan_code[5]~reg0.ENA
+reset => scan_code[6]~reg0.ENA
+reset => scan_code[7]~reg0.ENA
+reset => shiftin[0].ENA
+reset => shiftin[1].ENA
+reset => shiftin[2].ENA
+reset => shiftin[3].ENA
+reset => shiftin[4].ENA
+reset => shiftin[5].ENA
+reset => shiftin[6].ENA
+reset => shiftin[7].ENA
+reset => shiftin[8].ENA
+reset => ready_set.ENA
+read => scan_ready~reg0.ACLR
+scan_ready <= scan_ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
+scan_code[0] <= scan_code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+scan_code[1] <= scan_code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+scan_code[2] <= scan_code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+scan_code[3] <= scan_code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+scan_code[4] <= scan_code[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+scan_code[5] <= scan_code[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+scan_code[6] <= scan_code[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+scan_code[7] <= scan_code[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

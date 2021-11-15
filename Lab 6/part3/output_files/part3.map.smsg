@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at part3.v(222): object "A" differs only in case from object "a" in the same scope File: D:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 6/part3/part3.v Line: 222
+Info (10281): Verilog HDL Declaration information at part3.v(219): object "new_A" differs only in case from object "new_a" in the same scope File: D:/STUDY/Year 2 ECE/Fall 2017/3. ECE 241 H1 F/Lab 6/part3/part3.v Line: 219

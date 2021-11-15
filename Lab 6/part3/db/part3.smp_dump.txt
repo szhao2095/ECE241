@@ -1,0 +1,11 @@
+
+State Machine - |part3|whereTheMagicHappens:magic0|control:control0|current_state
+Name current_state.APlusDivisor_Wait current_state.APlusDivisor current_state.ASubDivisor_Wait current_state.ASubDivisor current_state.LeftShifting_Wait current_state.LeftShifting current_state.LoadingInValues_Wait current_state.LoadingInValues 
+current_state.LoadingInValues 0 0 0 0 0 0 0 0 
+current_state.LoadingInValues_Wait 0 0 0 0 0 0 1 1 
+current_state.LeftShifting 0 0 0 0 0 1 0 1 
+current_state.LeftShifting_Wait 0 0 0 0 1 0 0 1 
+current_state.ASubDivisor 0 0 0 1 0 0 0 1 
+current_state.ASubDivisor_Wait 0 0 1 0 0 0 0 1 
+current_state.APlusDivisor 0 1 0 0 0 0 0 1 
+current_state.APlusDivisor_Wait 1 0 0 0 0 0 0 1 
